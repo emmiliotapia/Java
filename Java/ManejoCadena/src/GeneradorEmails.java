@@ -8,8 +8,10 @@ public class GeneradorEmails {
         // Procesar o normalizar el nombre del usuario
         // Limpiar los espacios en blanco al inicio y al final
         var nombreNormalizado = nombreCompleto.strip();
+
         // Reemplazar los espacios en blanco por punto
         nombreNormalizado = nombreNormalizado.replace(" ", ".");
+
         // Convertir a minusculas
         nombreNormalizado = nombreNormalizado.toLowerCase();
         System.out.println("nombreNormalizado = " + nombreNormalizado);

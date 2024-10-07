@@ -9,7 +9,7 @@ public class ReemplazarSubcadenas {
         System.out.println("nuevaCadena = " + nuevaCadena);
         
         // Reemplazar "Hola" por "Adios"
-        nuevaCadena = cadena.replace("Hola", "Saludos");
+        nuevaCadena = cadena.replace("Hola", "Adios");
         System.out.println("nuevaCadena = " + nuevaCadena);
 
     }

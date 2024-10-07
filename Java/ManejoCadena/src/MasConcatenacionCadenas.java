@@ -3,7 +3,7 @@ public class MasConcatenacionCadenas {
         // Mas formas de concatenar cadenas en Java
         var cadena1 = "Hola";
         var cadena2 = "Mundo";
-        var cadena3 = cadena1 + " " + cadena2;
+        var cadena3 = cadena1 + " Emilio " + cadena2;
         System.out.println("cadena3 usando + = " + cadena3);
         
         // Metodo concat
@@ -26,7 +26,7 @@ public class MasConcatenacionCadenas {
         System.out.println("resultado StringBuffer = " + resultado);
 
         // join
-        resultado = String.join(" ", cadena1, cadena2, "Adios!");
+        resultado = String.join(",", cadena1, cadena2, "Adios!");
         System.out.println("resultado Join = " + resultado);
     }
 }

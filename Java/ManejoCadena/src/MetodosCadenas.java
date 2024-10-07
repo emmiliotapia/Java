@@ -14,14 +14,15 @@ public class MetodosCadenas {
         System.out.println("nuevaCadena = " + nuevaCadena);
 
         // Convertir a Mayusculas
-        var mayusculas = cadena1.toUpperCase();
+        var mayusculas = nuevaCadena.toUpperCase();
         System.out.println("mayusculas = " + mayusculas);
         
         // Convertir a Minisculas
         System.out.println("minusculas = " + cadena1.toLowerCase());
 
         // Eliminar espacios al inicio y al final
-        var cadena2 = " Emilio Tapia ";
+        var cadena2 = "      Hola Mundo      ";
+
         System.out.println("cadena2 con espacios = " + cadena2);
         System.out.println("cadena2 sin espacios = " + cadena2.trim());
 
