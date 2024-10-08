@@ -16,13 +16,25 @@ public class Matrices {
 
         // Recorrer una matriz
         // Recorrer renglones
-        for (var i = 0; i < RENGLONES; i++){
+//        for (var i = 0; i < RENGLONES; i++){
+//            // Recorrer columnas
+//            for (var j = 0; j < COLUMNAS; j++) {
+//                System.out.println("Valor["+i+"]["+j+"] es: " + matriz[i][j]);
+//            }
+//        }
+
+        // sintaxis simplificada
+        var matrizSimplificada = new int[][]{
+                {100, 200, 300},
+                {400, 500, 600}
+        };
+
+        for (var i = 0; i < matrizSimplificada.length; i++){
             // Recorrer columnas
-            for (var j = 0; j < COLUMNAS; j++) {
+            for (var j = 0; j < matrizSimplificada[i].length; j++) {
                 System.out.println("Valor["+i+"]["+j+"] es: " + matriz[i][j]);
             }
         }
-
 
     }
 
