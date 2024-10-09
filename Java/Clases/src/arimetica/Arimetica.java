@@ -1,37 +1,57 @@
 package arimetica;
 
 public class Arimetica {
-    int operando1;
-    int operando2;
+    private int operador1;
+    private int operador2;
 
     // Constructor vacio
     public Arimetica() {}
 
-    public Arimetica(int operando1, int operando2){
-        this.operando1 = operando1;
-        this.operando2 = operando2;
+    public Arimetica(int operador1, int operador2){
+        this.operador1 = operador1;
+        this.operador2 = operador2;
     }
 
+    // Metodos
+
     public void suma(){
-        var resultado = this.operando1 + this.operando2;
+        var resultado = this.operador1 + this.operador2;
         System.out.println("Resultado de la suma = " + resultado);
     }
 
     public void resta(){
-        var resultado = this.operando1 - this.operando2;
+        var resultado = this.operador1 - this.operador2;
         System.out.println("Resultado de la resta = " + resultado);
     }
 
-    void multiplicacion(){
-        var resultado = this.operando1 * this.operando2;
+    public void multiplicacion(){
+        var resultado = this.operador1 * this.operador2;
         System.out.println("Resultado de la multiplicacion = " + resultado);
     }
 
-    void division(){
-        var resultado = this.operando1 / this.operando2;
+    public void division(){
+        var resultado = this.operador1 / this.operador2;
         System.out.println("Resultado de la division = " + resultado);
     }
 
+    // Setter and Getter
+
+
+    public int getOperador1() {
+        return this.operador1;
+    }
+
+    public void setOperador1(int operador1) {
+        this.operador1 = operador1;
+    }
+
+    public int getOperador2() {
+        return this.operador2;
+    }
+
+    public void setOperador2(int operador2) {
+        this.operador2 = operador2;
+    }
 
 }
 
