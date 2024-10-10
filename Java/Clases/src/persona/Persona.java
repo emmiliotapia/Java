@@ -1,8 +1,8 @@
 package persona;
 
-import java.sql.SQLOutput;
-
 public class Persona {
+    private static int contadorPersonas = 0;
+    private int idUnico;
     private String nombre;
     private String apellido;
 
@@ -10,21 +10,26 @@ public class Persona {
     public Persona(String nombre, String apellido){
         this.nombre = nombre;
         this.apellido = apellido;
+        // Asignamos el id unico con ayuda del valor estatico
+        this.idUnico = ++Persona.contadorPersonas;
     }
 
     public Persona(){}
 
-    void mostrarPersona() {
-        System.out.println("Nombre: " + this.nombre);
-        System.out.println("Apellido: " + this.apellido);
-    }
-
-    void saludo() {
-        System.out.println("Hola, me llamo " + this.nombre + " y mi apellido es " + apellido);
+    // Metodos
+    @Override
+    public String toString(){
+        return
+                "ID unico : " + this.idUnico +
+                ", Nombre: " + this.nombre + ", Apellido: " + this.apellido
+        + ", Dir. Mem. " + super.toString();
     }
 
     // Setters and Getters
 
+    public int getIdUnico(){
+        return this.idUnico;
+    }
 
     public String getNombre() {
         return this.nombre;
@@ -40,5 +45,9 @@ public class Persona {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    public static int getContadorPersonas(){
+        return Persona.contadorPersonas;
     }
 }
