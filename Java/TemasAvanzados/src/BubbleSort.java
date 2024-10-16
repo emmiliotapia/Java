@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Anagrama {
+public class BubbleSort {
     public static void main(String[] args) {
 
         int[] numeros = {33,22,94,78,5};
